@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+  <a class="nav-item nav-link " href="C:\Users\Acer\Desktop\assignment\assignment1.html">Assignment-1</a>
+      <a class="nav-item nav-link " href="C:\Users\Acer\Desktop\assignment\assignment2.html">Assignment-2</a>
+    
+    </div>
+  </div>
+</nav>
+<div class="contanier pt-4">
+	<h3 style="text-align: center">ASSIGNMENT 2</h3>
+	<div class="row pt-5">
+		<div class="clo-md-12 m-auto">
+			<form>
+  
+  
+  
+  <div class="form-group">
+    <label>Enter a Sentence</label>
+    <textarea class="form-control" id="text" rows="2"></textarea>
+	  <label>Enter a Letter</label>
+	  <input type="text" id="letter" class="form-control">
+	  
+  </div>
+</form>
+			 <button class="btn btn-success mb-5" onclick="textView()">Submit </button><br>
+			<label style="font-size: 25px">Result</label><hr>
+			
+		<h3><span id="name"></span> </h3>
+			
+			
+			
+		</div>
+	</div>
+	
+</div>
+	<script>
+	function textView() {
+		 var text = document.getElementById("text").value;
+		 var letter = document.getElementById("letter").value;
+	
+		
+	   var count=text.indexOf(letter);
+		console.log(count);
+		var output = [text.slice(count+1,)].join('');
+			document.getElementById("name").innerHTML = output;
+		
+	
+
+		
+}
+	
+	</script>
+
+</body>
+</html>
